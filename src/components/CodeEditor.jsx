@@ -3,7 +3,7 @@ import { Box, HStack } from "@chakra-ui/react";
 import { Editor } from "@monaco-editor/react";
 import LanguageSelector from "./LanguageSelector";
 import { CODE_SNIPPETS } from "../constants";
-// import Output from "./Output";
+import Output from "./CC";
 
 const CodeEditor = () => {
   const editorRef = useRef();
@@ -40,7 +40,7 @@ const CodeEditor = () => {
             onChange={(value) => setValue(value)}
           />
         </Box>
-        {/* <Output editorRef={editorRef} language={language} /> */}
+        <Output editorRef={editorRef} language={language} />
       </HStack>
     </Box>
   );
