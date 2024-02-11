@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Box } from "@chakra-ui/react";
 import CodeEditor from "./components/CodeEditor";
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
